@@ -1,0 +1,69 @@
+/* Container */
+.container {
+    max-width: 1200px;
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    border-radius: 12px; /* More rounded corners for a modern look */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    background: rgba(0, 0, 0, 0.4); /* Slight overlay for text readability */
+    position: relative; /* To ensure correct positioning of background images */
+    z-index: 1; /* Ensure the container is above background images */
+}
+
+/* Header */
+.title-heading {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: 700; /* Bold for prominence */
+    color: #ffeb3b; /* Bright yellow for standout effect */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Shadow for better text visibility */
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2rem; /* Larger font size for readability */
+    margin: 12px 0; /* Increased margin for spacing */
+    line-height: 1.6; /* Increased line height for readability */
+    color: #0a33a1; /* White text for readability on varying backgrounds */
+}
+
+/* Backgrounds for different weather conditions */
+.sunny {
+    background: url('/public/images/sunny-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+}
+
+.rainy {
+    background: url('/public/images/rainy-background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+}
+
+.cloudy {
+    background: url('/public/images/cloudy-background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 80vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.6); /* Increased overlay for readability on mobile */
+    }
+
+    h2 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+
+    p {
+        font-size: 1rem;
+        color: #ffffff; /* Adjusted font size for smaller screens */
+    }
+}

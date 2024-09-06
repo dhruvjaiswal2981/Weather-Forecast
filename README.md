@@ -61,4 +61,4 @@ The city data is fetched from Opendatasoft's Geonames dataset. Each city include
 
 # Deployment link 
 
-- URL Link :- 
+- URL Link :- https://city-forecast.netlify.app/
